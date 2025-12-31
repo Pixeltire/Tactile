@@ -6,7 +6,9 @@ Un sistema de diseño moderno enfocado en interacciones táctiles y estética ma
 
 ## 🎨 Características
 
-- **Tipografía Estructural**: Jerarquía clara con Inter como fuente principal
+- **Tipografía Editorial Brutalista**: 
+  - Display/Títulos: **Bricolage Grotesque** (expresiva, construida, con opinión)
+  - Cuerpo: **Schibsted Grotesk** (legible, ink traps visibles, toque impreso)
 - **Paleta Internacional**: Klein Blue (#2563EB) y Safety Orange (#FF4F00)
 - **Sombras Realistas**: Oclusión ambiental suave para profundidad
 - **Física de Resortes**: Transiciones elásticas y naturales

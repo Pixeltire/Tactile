@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactile | Human-Centric Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <main class="max-w-[1200px] mx-auto px-6 py-20">
+
+        <!-- NAV -->
+        <nav class="flex justify-between items-center mb-20 reveal">
+            <div class="font-bold text-2xl tracking-tighter">Tc<span class="text-blue-600">.</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-500">
+                <a href="#" class="hover:text-black hoverable transition-colors">Sistema</a>
+                <a href="#" class="hover:text-black hoverable transition-colors">Componentes</a>
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="mb-24 reveal" style="animation-delay: 0.1s;">
+            <div class="tac-badge badge-accent mb-6 hoverable">v1.0 System Kit</div>
+            <h1 class="display-text hoverable">
+                Sistema de Diseño<br>
+                <span class="text-slate-400">Tactile & Matte.</span>
+            </h1>
+        </header>
+
+        <!-- 1. TYPOGRAPHY & COLORS -->
+        <div class="section-header reveal" style="animation-delay: 0.2s;">
+            <h2 class="text-2xl font-bold">01. Fundamentos</h2>
+            <span class="text-slate-400 text-sm font-mono">Typography & Color</span>
+        </div>
+
+        <section class="stagger-grid mb-12">
+            <div class="col-span-8 tac-surface p-10 hoverable reveal" style="animation-delay: 0.3s;">
+                <h1 class="text-5xl font-extrabold mb-6">Heading 1</h1>
+                <h2 class="text-4xl font-bold mb-5">Heading 2</h2>
+                <h3 class="text-3xl font-bold mb-4">Heading 3</h3>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                    Body Text Large. Tactile utiliza una tipografía grotesca funcional para títulos y una sans-serif
+                    humanista para lectura, creando un contraste editorial sólido.
+                </p>
+            </div>
+
+            <div class="col-span-4 grid grid-rows-3 gap-4 reveal" style="animation-delay: 0.4s;">
+                <div class="tac-surface p-6 bg-[#1A1C1E] text-white flex justify-between items-end hoverable">
+                    <span class="font-mono text-xs opacity-50">#1A1C1E</span>
+                    <span class="font-bold">Surface Dark</span>
+                </div>
+                <div class="tac-surface p-6 bg-[#2563EB] text-white flex justify-between items-end hoverable">
+                    <span class="font-mono text-xs opacity-50">#2563EB</span>
+                    <span class="font-bold">Klein Blue</span>
+                </div>
+                <div class="tac-surface p-6 bg-[#FF4F00] text-white flex justify-between items-end hoverable">
+                    <span class="font-mono text-xs opacity-50">#FF4F00</span>
+                    <span class="font-bold">Safety Orange</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. INTERACTIVE ELEMENTS -->
+        <div class="section-header reveal">
+            <h2 class="text-2xl font-bold">02. Interactividad</h2>
+            <span class="text-slate-400 text-sm font-mono">Buttons & Inputs</span>
+        </div>
+
+        <section class="stagger-grid mb-12">
+            <!-- Buttons Card -->
+            <div class="col-span-6 tac-surface p-10 hoverable reveal">
+                <h4 class="text-sm font-bold uppercase text-slate-400 mb-8 tracking-widest">Botones Hápticos</h4>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <button class="tac-btn tac-btn-primary hoverable">Primary Action</button>
+                    <button class="tac-btn tac-btn-secondary hoverable">Secondary</button>
+                </div>
+                <div class="flex flex-wrap gap-4 items-center">
+                    <button class="tac-btn tac-btn-ghost hoverable">Ghost Button</button>
+                    <button class="tac-btn tac-btn-destructive hoverable">
+                        <i class="ph-bold ph-trash"></i> Eliminar
+                    </button>
+                    <button
+                        class="w-12 h-12 rounded-full tac-surface flex items-center justify-center hover:bg-slate-50 hoverable transition-colors">
+                        <i class="ph-bold ph-heart text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Forms Card -->
+            <div class="col-span-6 tac-surface p-10 hoverable reveal">
+                <h4 class="text-sm font-bold uppercase text-slate-400 mb-8 tracking-widest">Entrada de Datos</h4>
+
+                <div class="tac-input-group">
+                    <label class="tac-label">Correo Electrónico</label>
+                    <input type="email" class="tac-input hoverable" placeholder="nombre@ejemplo.com">
+                </div>
+
+                <div class="flex gap-8 mt-8">
+                    <div class="flex flex-col gap-3">
+                        <label class="flex items-center gap-3 cursor-pointer hoverable">
+                            <input type="checkbox" class="tac-checkbox" checked>
+                            <span class="font-medium text-sm">Sincronizar</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer hoverable">
+                            <input type="checkbox" class="tac-checkbox">
+                            <span class="font-medium text-sm text-slate-500">Auto-guardado</span>
+                        </label>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <label class="flex items-center gap-3 cursor-pointer hoverable">
+                            <input type="radio" name="opts" class="tac-radio" checked>
+                            <span class="font-medium text-sm">Opción A</span>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer hoverable">
+                            <input type="radio" name="opts" class="tac-radio">
+                            <span class="font-medium text-sm text-slate-500">Opción B</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. FEEDBACK & DATA -->
+        <div class="section-header reveal">
+            <h2 class="text-2xl font-bold">03. Feedback</h2>
+            <span class="text-slate-400 text-sm font-mono">Alerts & Cards</span>
+        </div>
+
+        <section class="stagger-grid mb-24">
+
+            <!-- Alerts Column -->
+            <div class="col-span-5 flex flex-col gap-4 reveal">
+                <div class="tac-alert info hoverable">
+                    <div
+                        class="w-10 h-10 rounded-full bg-blue-100 flex-shrink-0 flex items-center justify-center text-blue-600">
+                        <i class="ph-bold ph-info"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm mb-1">Nueva Versión Disponible</h5>
+                        <p class="text-sm text-slate-500">El sistema se ha actualizado a v1.0.0.</p>
+                    </div>
+                </div>
+
+                <div class="tac-alert success hoverable">
+                    <div
+                        class="w-10 h-10 rounded-full bg-green-100 flex-shrink-0 flex items-center justify-center text-green-600">
+                        <i class="ph-bold ph-check-circle"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm mb-1">Pago Procesado</h5>
+                        <p class="text-sm text-slate-500">La transacción #8920 se completó.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Card -->
+            <div class="col-span-4 tac-surface p-0 hoverable reveal group">
+                <div class="h-24 bg-slate-800 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-20"></div>
+                </div>
+                <div class="px-8 pb-8">
+                    <div class="w-20 h-20 bg-white p-1 rounded-full -mt-10 mb-4 relative z-10">
+                        <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Felix" alt="Avatar"
+                            class="w-full h-full rounded-full bg-slate-100">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-bold text-lg">Alex Morgan</h3>
+                            <p class="text-slate-500 text-sm">Product Designer</p>
+                        </div>
+                        <span class="tac-badge badge-neutral">PRO</span>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-6 leading-relaxed">
+                        Explorando los límites de la interacción digital y la materia.
+                    </p>
+                    <button class="tac-btn w-full tac-btn-secondary hoverable">Ver Perfil</button>
+                </div>
+            </div>
+
+            <!-- Stats Column -->
+            <div class="col-span-3 flex flex-col gap-4 reveal">
+                <div class="tac-surface p-6 hoverable flex flex-col justify-between h-full">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center text-orange-500">
+                            <i class="ph-bold ph-chart-line-up"></i>
+                        </div>
+                        <span class="text-green-600 text-xs font-bold bg-green-50 px-2 py-1 rounded">+12%</span>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold mb-1">24.5k</div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Visitas Totales</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

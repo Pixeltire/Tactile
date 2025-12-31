@@ -15,3 +15,8 @@ npm-debug.log*
 # Temporary files
 *.tmp
 *.temp
+
+*storybook.log
+storybook-static
+
+node_modules/

@@ -1,38 +1,35 @@
-# Tactile Design System
+# Tactile Design System v1.0.3
 
-> An Editorial Brutalist design system focused on tactile interactions and matte aesthetics.
->
-> [🇪🇸 Leer en Español](./README.es.md)
+> A Human-Centric UI Library focused on tactile interactions, matte aesthetics, and physics-based motion.
+> Now powered by **React 18 + Vite + Tailwind v4**.
 
-**Created by Antonio** | [Live Demo](https://pixeltire.github.io/Tactile)
+[🇪🇸 Leer en Español](./README.es.md) (Actualizado)
+
+**Created by Antonio** | [Live Demo (Local)](http://localhost:5174)
+
+---
+
+## 🌟 What's New in v1.0.3?
+
+- **🚀 React Architecture**: Fully migrated from static HTML to a robust React Component System.
+- **⚡ Powered by Vite**: Instant HMR and lightning-fast builds.
+- **🌗 Automatic Theme Detection**: The system now listens to your OS preference (Light/Dark) and adapts automatically.
+- **🧲 Physics Lab**: New experimental components featuring magnetic attraction and elastic resistance.
 
 ---
 
 ## 🎨 Design Philosophy
 
-Tactile breaks away from boring tech standards through an **Editorial Brutalist** combination that mixes the expressive with the functional. Every component is designed to feel hand-built, with opinion and character.
+Tactile breaks using an **Editorial Brutalist** approach. We don't just display pixels; we simulate matter.
 
 ### Typography
-
-- **Display/Headings**: [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque)  
-  A modern variable font with compressed widths and expressive shapes. Feels "hand-built".
-
-- **Body**: [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk)  
-  Designed for digital screens with visible ink traps that give it a printed and technical touch.
-
-### Color Palette
-
-Inspired by the **International Style**:
-
-- **Klein Blue** `#2563EB` - Primary Accent
-- **Safety Orange** `#FF4F00` - Secondary Accent
-- **Surface Dark** `#1A1C1E` - Main Text
+- **Display**: [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque) (Expressive, Compressed)
+- **Body**: [Schibsted Grotesk](https://fonts.google.com/specimen/Schibsted+Grotesk) (Technical, Legible)
 
 ### Interaction Physics
-
-- **Ambient Occlusion Shadows**: Realistic and soft
-- **Elastic Transitions**: `cubic-bezier(0.34, 1.56, 0.64, 1)`
-- **Ceramic Surfaces**: Matte effect with premium hover
+- **Magnetic Buttons**: Elements that "feel" the cursor's gravity.
+- **Elastic Transitions**: `spring(stiffness: 150, damping: 15)` for natural movement.
+- **Ceramic Surfaces**: Matte finishes with soft ambient occlusion shadows.
 
 ---
 
@@ -45,64 +42,55 @@ git clone https://github.com/Pixeltire/Tactile.git
 # Install dependencies
 npm install
 
-# Start Storybook
-npm run storybook
+# Start the Development Server (with Physics Lab)
+npm run dev
 ```
 
 ---
 
-## 📦 Structure
+## 📦 Project Structure
 
 ```
 tactile/
 ├── src/
-│   ├── components/    # React Components
-│   ├── tokens/        # Design Tokens
-│   └── styles/        # Global CSS
-├── .storybook/        # Storybook Configuration
-└── package.json       # Dependencies
+│   ├── components/
+│   │   ├── Button/           # Base Interaction
+│   │   ├── Interaction/      # Physics Components (Magnetic, Elastic) [NEW]
+│   │   └── Visuals/          # Backgrounds & Shapes
+│   ├── styles/               # Tailwind v4 CSS-first config
+│   ├── App.tsx               # Main Demo Application
+│   └── main.tsx              # React Entry Point
+├── package.json              # v1.0.3
+├── vite.config.ts            # Build Configuration
+└── README.md
 ```
 
 ---
 
-## 🎯 Components
+## 🎯 Component Library
 
-### Buttons
-- **Primary** - Main action
-- **Secondary** - Secondary action
-- **Ghost** - Tertiary action
-- **Destructive** - Dangerous actions
+### 1. Physics & Motion [NEW]
+- **MagneticButton**: Wraps any element to give it cursor-attraction physics.
+- **ElasticSlider**: A draggable slider with spring resistance.
 
-### Forms
-- Inputs with hover/focus states
-- Custom Checkboxes
-- Custom Radio buttons
+### 2. Core Elements
+- **Haptic Buttons**: Primary, Secondary, Ghost, Desctructive.
+- **Smart Inputs**: Forms that respond to focus with "pop" animations.
+- **Surface Cards**: Elevated, Outlined, and Filled states.
 
-### Feedback
-- Alerts (Info, Success, Warning)
-- Profile Cards
-- Stats Cards
-- Badges
+### 3. Utilities
+- **Auto-Theme**: No toggle needed. Respects `prefers-color-scheme`.
+- **Modals**: Framer Motion powered elastic dialogs.
 
 ---
 
-## 🛠️ Customization
+## 🛠️ Tech Stack
 
-All variables are in `:root` within `src/styles/global.css`:
-
-```css
-:root {
-    --accent-primary: #2563EB;
-    --accent-secondary: #FF4F00;
-    --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-```
-
----
-
-## 📄 License
-
-MIT License - Free use
+- **Framework**: React 18 + TypeScript
+- **Styling**: Tailwind CSS v4 (CSS-first configuration)
+- **Motion**: Framer Motion
+- **Icons**: Lucide React
+- **Build**: Vite
 
 ---
 
@@ -112,3 +100,4 @@ MIT License - Free use
 GitHub: [@Pixeltire](https://github.com/Pixeltire)
 
 ---
+*Last Updated: v1.0.3 (Physics Update)*
